@@ -37,6 +37,7 @@ Once all dependencies have been downloaded, you can start the server / webpage b
 * webpack
 * babel
 * nodemon
+* Workbox
 * express.js
 * IndexedDB
 
@@ -44,7 +45,7 @@ Once all dependencies have been downloaded, you can start the server / webpage b
 
 ![](./assets/images/preview.PNG)
 
-In order to use this project, please make sure you have mongoDB and optionally Insomnia intalled on your machine. Once that is set up, simply execute npm start and the application should start. Insomnia can be used to test the routes.
+In order to use this project, please make sure you have node.js intalled on your machine. Once that is set up, simply execute npm start and the application should start. Alternatively, visit the site [here](https://frozen-journey-17981.herokuapp.com/)
 
 ## Credits
 
