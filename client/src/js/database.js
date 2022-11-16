@@ -1,5 +1,6 @@
 import { openDB } from 'idb';
 
+// Database initialization
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
@@ -13,6 +14,7 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
+// Put is used since we want to edit on index as opposed to constantly adding to the database
 export const putDb = async (content) => {
   console.log('PUT to the database');  
 
@@ -26,6 +28,7 @@ export const putDb = async (content) => {
 }
 
 // TODO: Add logic for a method that gets all the content from the database
+// Gets all items from DB
 export const getDb = async () => {
   console.log('GET from the database');
 

@@ -30,12 +30,14 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 const cacheName = 'static-resources';
 
+// Checks if resource is CSS or JS
 const matchCallback = ({ request }) => {
   return (
     request.destination === 'style' || request.destination === 'script'
   )
 }
 
+// CSS / JS are stashed here
 registerRoute(matchCallback,
   new StaleWhileRevalidate({
     cacheName,
@@ -47,6 +49,7 @@ registerRoute(matchCallback,
   })
 );
 
+// Images are cached here
 registerRoute(
   ({ request }) => request.destination === 'image',
   new CacheFirst({
