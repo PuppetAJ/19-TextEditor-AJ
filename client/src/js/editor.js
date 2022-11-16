@@ -28,6 +28,7 @@ export default class {
       console.info('Loaded data from IndexedDB, injecting into editor');
       // if data.content is falsey then use localData or header
       if(!data.content) {
+        console.log('got here');
         this.editor.setValue(localData || header);
       } else {
         this.editor.setValue(data.content);
