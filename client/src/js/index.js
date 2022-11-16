@@ -31,10 +31,3 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error('Service workers are not supported in this browser.');
 }
-
-// const rem = async function() {
-//   const dbs = await window.indexedDB.databases()
-//   dbs.forEach(db => { window.indexedDB.deleteDatabase(db.name) })
-// }
-
-// rem();
